@@ -1,17 +1,17 @@
-var tabela = document.querySelector('table');
+let tabela = document.querySelector('table');
 
-var btnCad = document.querySelector('button');
+let btnCad = document.querySelector('button');
 btnCad.addEventListener('click', function(){
-    var inputNome = document.querySelector('input[name=nome]');
-    var nome = inputNome.value;
-    var textNome = document.createTextNode(nome);
-    var inputTelefone = document.querySelector('input[name=telefone');
-    var telefone = inputTelefone.value;
-    var textTelefone = document.createTextNode(telefone);
-    var tr = document.createElement('tr');
-    var td = document.createElement('td');
-    var td2 = document.createElement('td');
-    var linkExcluir = document.createElement('a');
+    let inputNome = document.querySelector('input[name=nome]');
+    let nome = inputNome.value;
+    let textNome = document.createTextNode(nome);
+    let inputTelefone = document.querySelector('input[name=telefone');
+    let telefone = inputTelefone.value;
+    let textTelefone = document.createTextNode(telefone);
+    let tr = document.createElement('tr');
+    let td = document.createElement('td');
+    let td2 = document.createElement('td');
+    let linkExcluir = document.createElement('a');
     linkExcluir.setAttribute('href', '#');
     linkExcluir.appendChild(document.createTextNode('Excluir'));
     td.appendChild(textNome);
